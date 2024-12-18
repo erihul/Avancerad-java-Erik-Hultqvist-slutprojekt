@@ -13,8 +13,6 @@ import java.util.*;
 public class TaskController {
     private List<Task> tasks = new ArrayList<>();
 
-
-    // ?? Unused ??
     public TaskController() {
     tasks.add(new Task("Träna", "Jogga 6km i Pildammarna"));
     tasks.add(new Task("Examination", "Börja med sista uppgiften i kursen Avancerad JAVA"));
