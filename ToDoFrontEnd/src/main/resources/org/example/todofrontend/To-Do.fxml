@@ -37,40 +37,39 @@
       </AnchorPane>
       <AnchorPane prefHeight="414.0" prefWidth="700.0" style="-fx-background-color: lightyellow;">
          <children>
-            <Button fx:id="addButton" layoutX="360.0" layoutY="21.0" mnemonicParsing="false" onAction="#addNewTask" prefHeight="61.0" prefWidth="82.0" style="-fx-background-color: #77C277FF; -fx-border-color: #F7B4FFF;" text="+">
+            <Button fx:id="addButton" layoutX="417.0" layoutY="38.0" mnemonicParsing="false" onAction="#addNewTask" prefHeight="61.0" prefWidth="82.0" style="-fx-background-color: #77C277FF; -fx-border-color: #F7B4FFF;" text="+">
                <font>
                   <Font name="Courier New Bold" size="37.0" />
                </font>
             </Button>
-            <TextField fx:id="inputTitle" layoutX="92.0" layoutY="43.0">
+            <TextField fx:id="inputTitle" layoutX="154.0" layoutY="45.0" prefHeight="27.0" prefWidth="173.0" promptText="Write the Title of your Task">
                <font>
                   <Font size="13.0" />
                </font></TextField>
-            <TextArea fx:id="inputDescription" layoutX="92.0" layoutY="120.0" prefHeight="109.0" prefWidth="238.0">
+            <TextArea fx:id="inputDescription" layoutX="154.0" layoutY="122.0" prefHeight="109.0" prefWidth="238.0" promptText="To change description of a task, write the title and a new description.Then press Save Change." wrapText="true">
                <font>
                   <Font size="13.0" />
                </font></TextArea>
-            <Label layoutX="98.0" layoutY="14.0" text="Title">
+            <Label layoutX="160.0" layoutY="16.0" text="Title">
                <font>
                   <Font name="Courier New" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="93.0" layoutY="87.0" text="Description">
+            <Label layoutX="155.0" layoutY="89.0" text="Description">
                <font>
                   <Font name="Courier New" size="17.0" />
                </font>
             </Label>
-            <Button fx:id="deleteButton" graphicTextGap="0.0" layoutX="360.0" layoutY="124.0" mnemonicParsing="false" onAction="#deleteTask" prefHeight="44.0" prefWidth="51.0" style="-fx-background-color: #fb9c20; -fx-border-color: #F6316FF;" text="--" textFill="#000000fc">
+            <Button fx:id="deleteButton" graphicTextGap="0.0" layoutX="515.0" layoutY="59.0" mnemonicParsing="false" onAction="#deleteTask" prefHeight="44.0" prefWidth="51.0" style="-fx-background-color: #fb9c20; -fx-border-color: #F6316FF;" text="--" textFill="#000000fc">
                <font>
-                  <Font name="Arial Black" size="22.0" />
+                  <Font name="Arial Bold" size="22.0" />
                </font>
             </Button>
-            <Button fx:id="changeButton" layoutX="461.0" layoutY="107.0" mnemonicParsing="false" onAction="#changeTask" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #fdbec9; -fx-border-color: BB9197FF;" text="Save Change">
+            <Button fx:id="changeButton" layoutX="433.0" layoutY="134.0" mnemonicParsing="false" onAction="#changeTask" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #fdbec9; -fx-border-color: BB9197FF;" text="Save Change">
                <font>
                   <Font name="Bookman Old Style" size="17.0" />
                </font>
             </Button>
-            <Label layoutX="465.0" layoutY="148.0" prefHeight="68.0" prefWidth="126.0" text="To change description: Write the title of the task you want to change." wrapText="true" />
          </children>
       </AnchorPane>
    </children>

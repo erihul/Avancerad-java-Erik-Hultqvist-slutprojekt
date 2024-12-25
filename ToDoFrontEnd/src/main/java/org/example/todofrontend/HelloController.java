@@ -3,18 +3,12 @@ package org.example.todofrontend;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.PauseTransition;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
-import javafx.scene.input.MouseEvent;
-import javafx.util.Duration;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,6 +18,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+
+import javafx.animation.KeyFrame;
+import javafx.animation.PauseTransition;
+import javafx.animation.Timeline;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.input.MouseEvent;
+import javafx.util.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,16 +52,7 @@ public class HelloController {
         changeButton.setOnMouseExited(e -> changeButton.setStyle("-fx-background-color: #fdbec9;"));
         deleteButton.setOnMouseEntered(e -> deleteButton.setStyle("-fx-background-color: #fbb048;"));
         deleteButton.setOnMouseExited(e -> deleteButton.setStyle("-fx-background-color: #fb9c20;"));
-/*
-        // Scrollbar
-        ScrollPane scrollPane = new ScrollPane(taskArea);
-
-        // Set scroll policy to ensure both horizontal and vertical scrollbars appear as needed
-        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
-        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);*/
-
     }
-
 
     @FXML
     private Button addButton;
